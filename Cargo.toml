@@ -1,0 +1,14 @@
+[package]
+name = "tv"
+version = "0.1.0"
+edition = "2021"
+description = "Terminal Folder Tree Viewer"
+license = "MIT"
+
+[[bin]]
+name = "tv"
+path = "src/tree.rs"
+
+[profile.release]
+opt-level = 3
+strip = true
