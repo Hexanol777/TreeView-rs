@@ -7,43 +7,102 @@ In addition to human-readable output, `tv` can emit a machine-readable JSON repr
 ### Text mode
 
 ```text
-project_folder/
-├── app.py
-├── database.db
-├── uploads
-├── templates
-│   └── index.html
-└── static
+TreeView-rs/
+├── Cargo.lock
+├── Cargo.toml
+├── LICENSE
+├── README.md
+├── src
+│   ├── tree.exe
+│   ├── tree.pdb
+│   └── tree.rs
+└── target
+    ├── CACHEDIR.TAG
+    ├── debug
+    └── flycheck0
 ```
 
 ### JSON mode
 
 ```json
 {
-  "name": "project_folder",
+  "name": "TreeView-rs",
   "type": "directory",
   "children": [
     {
-      "name": "app.py",
+      "name": "Cargo.lock",
       "type": "file",
-      "extension": ".py",
-      "size_bytes": 2048
+      "extension": ".lock",
+      "size_bytes": 146
     },
     {
-      "name": "templates",
+      "name": "Cargo.toml",
+      "type": "file",
+      "extension": ".toml",
+      "size_bytes": 217
+    },
+    {
+      "name": "LICENSE",
+      "type": "file",
+      "extension": null,
+      "size_bytes": 1082
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "extension": ".md",
+      "size_bytes": 3247
+    },
+    {
+      "name": "src",
       "type": "directory",
       "children": [
         {
-          "name": "index.html",
+          "name": "tree.exe",
           "type": "file",
-          "extension": ".html",
-          "size_bytes": 512
+          "extension": ".exe",
+          "size_bytes": 257024
+        },
+        {
+          "name": "tree.pdb",
+          "type": "file",
+          "extension": ".pdb",
+          "size_bytes": 1429504
+        },
+        {
+          "name": "tree.rs",
+          "type": "file",
+          "extension": ".rs",
+          "size_bytes": 12910
+        }
+      ],
+      "file_count": 3
+    },
+    {
+      "name": "target",
+      "type": "directory",
+      "children": [
+        {
+          "name": "CACHEDIR.TAG",
+          "type": "file",
+          "extension": ".TAG",
+          "size_bytes": 177
+        },
+        {
+          "name": "debug",
+          "type": "directory",
+          "children": []
+        },
+        {
+          "name": "flycheck0",
+          "type": "directory",
+          "children": []
         }
       ],
       "file_count": 1
     }
   ],
-  "file_count": 3
+  "file_count": 4
 }
 ```
 
